@@ -1,6 +1,6 @@
 %li
   %span.created_at= message.created_at.strftime("%H:%M")
   %span.user-name
-    = message.user.present? message.user.name : "server"
+    = message.user.present? ? message.user.name : "server"
   =": "
   = message.content 
