@@ -1,4 +1,4 @@
-<% user_name = @message.user.name || "server" %> 
+<% user_name = @message.user.present? ? @message.user.name : "server" %> 
 <% publish_to "/messages/new" do %>
   $("#chat").append("<%= j render(@message) %>");
   
