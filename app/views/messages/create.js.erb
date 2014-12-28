@@ -1,0 +1,10 @@
+<% publish_to "/messages/new" do %>
+  $("#chat").append("<%= j render(@message) %>");
+  
+  function newMessage(permission) {
+    if( permission != "granted" ) return false;
+    var notify = new Notification("navygator", { body: "<%= j @message.content %>" });
+  };
+  Notification.requestPermission( newMessage );
+<% end %>
+$("#new_message")[0].reset();

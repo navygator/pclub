@@ -1,5 +1,6 @@
 source 'http://rubygems.org'
 
+ruby '2.1.3'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.0'
@@ -25,6 +26,8 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 
 gem 'devise'
 gem 'haml'
+gem 'thin'
+gem 'private_pub'
 
 group :development do
   gem 'sqlite3'
