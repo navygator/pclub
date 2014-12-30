@@ -5,3 +5,6 @@
   = f.text_area :content 
   = f.submit "Send", class: "btn btn-primary pull-right"
 = subscribe_to "/messages/new"
+
+- if session[:pubkey].nil?
+  - session[:pubkey] = 'hello'
