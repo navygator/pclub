@@ -3,6 +3,13 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+.alert {
+  &.alert-notice {
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+    color: #3c763d;
+  }
+}
 body {
   background-color: #4B7399;
   font-family: Verdana, Helvetica, Arial;
