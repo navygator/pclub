@@ -25,11 +25,10 @@
             "@inited": "true",
             "json()": {
                 "rails": {
-                    "command": "rails s $ENV[IP]  -p $ENV[PORT]",
+                    "command": "rails s -b $IP -p $PORT",
                     "debug": true,
-                    "env": {},
                     "name": "rails",
-                    "runner": "Ruby 2.1"
+                    "runner": "Shell command"
                 }
             }
         }

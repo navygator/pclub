@@ -9,6 +9,6 @@
     %header
       = render 'shared/top_navbar'
     #container.container
-      - flash.each do |name, msg| 
-        = content_tag :div, msg, :class => "alert alert-#{name}" 
+      - flash.each do |name, msg|
+        = content_tag :div, msg, :class => "alert flash-#{name}" 
       = yield 
