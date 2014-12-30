@@ -1,0 +1,15 @@
+%h1 Edit #{@resource.name}
+
+= form_for(@resource) do |f|
+  .field
+    = f.label :email
+    %br
+    = f.email_field :email
+        
+  .field
+    = f.label :name
+    %br
+    = f.text_field :name
+    
+  .actions
+    = f.submit "Save", class: "btn btn-primary"

@@ -1,7 +1,7 @@
 ul#chat {
   list-style: none;
   padding: 0;
-  width: 300px;
+  width: 100%;
   height: 150px;
   border: solid 1px #777;
   margin: 5px 0;
@@ -26,6 +26,6 @@ ul#chat {
   }
 }
 
-input#message_content {
-  width: 240px;
+textarea#message_content {
+  width: 100% !important;
 }

@@ -2,6 +2,6 @@
 %ul#chat
   = render @messages 
 = form_for Message.new, :remote => true do |f| 
-  = f.text_field :content 
-  = f.submit "Send" 
+  = f.text_area :content 
+  = f.submit "Send", class: "btn btn-primary pull-right"
 = subscribe_to "/messages/new"

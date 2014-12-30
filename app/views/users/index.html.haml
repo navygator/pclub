@@ -1,0 +1,15 @@
+%h1 Список пользователей
+%p
+%table.table.table-stripped
+  %thead
+    %tr
+      %th Email
+      %th Name
+      %th.actions
+  %tbody
+    - @collection.each do |user|
+      %tr
+        %td= user.email
+        %td= user.name
+        %td.actions
+        
