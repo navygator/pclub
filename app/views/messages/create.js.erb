@@ -1,6 +1,7 @@
 <% user_name = @message.user.present? ? @message.user.name : "server" %> 
 <% publish_to "/messages/new" do %>
   $("#chat").append("<%= j render(@message) %>");
+  $('#chat').animate({scrollTop: $('#chat li:last').offset().top}, 'slow');
   function newMessage(permission) {
     if( permission != "granted" ) return false;
     var notify = new Notification("<%= user_name %>", { body: "<%= j @message.content %>" });
