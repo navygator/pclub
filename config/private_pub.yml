@@ -1,10 +1,10 @@
 development:
-  server: "http://faye-pclub.herokuapp.com/faye" #"http://localhost:9292/faye"
+  server: "https://faye-pclub.herokuapp.com/faye" #"http://localhost:9292/faye"
   secret_token: "some-for-private-usage"
 test:
   server: "http://localhost:9292/faye"
   secret_token: "secret"
 production:
-  server: "http://faye-pclub.herokuapp.com/faye"
+  server: "https://faye-pclub.herokuapp.com/faye"
   secret_token: "some-for-private-usage"
   signature_expiration: 3600 # one hour
