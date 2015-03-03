@@ -9,6 +9,11 @@
     %header
       = render 'shared/top_navbar'
     #container.container
-      - flash.each do |name, msg|
-        = content_tag :div, msg, :class => "alert flash-#{name}" 
-      = yield 
+      .sys-messages
+        .row
+          - flash.each do |name, msg|
+            = content_tag :div, msg, class: "alert flash-#{name}" 
+      .row
+        = render 'shared/sidebar' if content_for? :sidebar
+        %div{ class:  content_for?(:sidebar) ? 'col-md-8 col-xs-hidden' : 'col-md-12' }
+          = yield 

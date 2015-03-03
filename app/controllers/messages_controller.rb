@@ -2,6 +2,7 @@ class MessagesController < ApplicationController
   before_action :authenticate_user!
 
   def index
+    #if params[]
     @messages = Message.all
   end
 

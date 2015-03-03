@@ -31,6 +31,7 @@ gem 'devise'
 gem 'haml'
 gem 'thin'
 gem 'private_pub'
+gem 'angularjs-rails'
 
 group :development do
   gem 'sqlite3'
