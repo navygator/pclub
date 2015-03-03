@@ -3,7 +3,7 @@
   = render 'users_list'
 %ul#chat
   = render @messages 
-= form_for Message.new, :remote => true do |f| 
+= form_for Message.new do |f| 
   = f.text_area :content 
   = f.submit "Send", class: "btn btn-primary pull-right"
 

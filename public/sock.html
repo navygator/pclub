@@ -13,7 +13,7 @@
       var logger = document.getElementsByTagName('ul')[0],
           Socket = window.MozWebSocket || window.WebSocket,
           protos = ['foo', 'bar', 'xmpp'],
-          socket = new Socket('ws://' + location.hostname + ':' + location.port + '/', protos),
+          socket = new Socket('ws://' + location.hostname + ':' + location.port + '/chat'),
           index  = 0;
 
       var log = function(text) {
@@ -22,7 +22,7 @@
 
       socket.addEventListener('open', function() {
         log('OPEN: ' + socket.protocol);
-        socket.send('Hello, world');
+        //socket.send('Hello, world');
       });
 
       socket.onerror = function(event) {

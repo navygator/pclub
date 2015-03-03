@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
-ruby '2.1.3'
+ruby '2.1.4'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.0'
@@ -29,8 +29,11 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 
 gem 'devise'
 gem 'haml'
-gem 'thin'
-gem 'private_pub'
+# gem 'thin'
+# gem 'private_pub'
+gem 'puma'
+gem 'tubesock'
+
 gem 'angularjs-rails'
 
 group :development do
