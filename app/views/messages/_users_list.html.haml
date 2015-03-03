@@ -1,0 +1,6 @@
+.list-group
+  - User.all.each do |user|
+    = link_to user, class: 'list-group-item' do
+      %span.badge 5
+      = user.name
+
