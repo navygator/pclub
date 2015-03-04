@@ -2,8 +2,12 @@ $ ->
   $('#message_content').keypress (e) ->
     if e.ctrlKey && e.keyCode == 10
       $(@).closest('form').submit()
-      
-  socket = new WebSocket "ws://#{window.location.host}/chat"
+  
+  protocol = if (window.location.protocol.match(/https/))
+    'wss' 
+  else
+    'ws'
+  socket = new WebSocket "#{protocol}://#{window.location.host}/chat"
   socket.onmessage = (event) ->
     if event.data.length
       $("#chat").append "<li>#{event.data}</li>"
