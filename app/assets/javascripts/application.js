@@ -14,4 +14,8 @@
 //= require bootstrap-sprockets
 //= require jquery_ujs
 //= require turbolinks
+//= require jsencrypt
+//= require handlebars.runtime
+//= require_tree ./templates
 //= require_tree .
+

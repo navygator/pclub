@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   resources :users
   resources :messages
 
-  get '/chat' => 'chat#chat'   
+  get '/chat' => 'messages#chat'   
 
   root 'messages#index'
 end

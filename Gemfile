@@ -29,12 +29,11 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 
 gem 'devise'
 gem 'haml'
-# gem 'thin'
-# gem 'private_pub'
 gem 'puma'
 gem 'tubesock'
 
 gem 'angularjs-rails'
+gem 'handlebars_assets'
 
 group :development do
   gem 'sqlite3'
